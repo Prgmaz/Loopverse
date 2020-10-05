@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 
-app.use(express.static('static', 'static'));
+app.use('/static', express.static('static'));
 
 app.get('/', (req, res) => {
-   return res.render('index.html');
+   return res.sendFile(`${__dirname}/index.html`);
 });
 
 app.listen(2000);
