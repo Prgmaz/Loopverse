@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | LoopVerse</title>
+    <title>LoopVerse</title>
 <link rel="stylesheet" href="static/css/style.css">
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/LoopVerse.loader.js"></script>
+    <script src="static/Build/LoopVerse.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/LoopVerse.data",
-        frameworkUrl: "Build/LoopVerse.framework.js",
-        codeUrl: "Build/LoopVerse.wasm",
+        dataUrl: "static/Build/LoopVerse.data",
+        frameworkUrl: "static/Build/LoopVerse.framework.js",
+        codeUrl: "static/Build/LoopVerse.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Programmer101N",
         productName: "LoopVerse",
