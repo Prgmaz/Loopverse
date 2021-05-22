@@ -7,4 +7,6 @@ app.get('/', (req, res) => {
    return res.sendFile(`${__dirname}/index.html`);
 });
 
-app.listen(3912);
+app.listen(3000, () => {
+	console.log("Local Server is running on localhost:3000");
+});
